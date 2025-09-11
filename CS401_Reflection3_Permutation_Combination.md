@@ -43,10 +43,10 @@
 4. k-combinations WITH repetitions; UNORDERED – “Stars and Bars”
    - What kind of questions does this model solve?
      - Using (k-1) bars to split n objects.
-     - e.g. How many ways do we have to distribute n cupcakes to k people?
+   - e.g. How many ways do we have to distribute n cupcakes to k people?
      - (note: all cupcakes are the same, so the order doesn’t matter)
      - Solution: To distribute n cupcakes to k people, we just need to put (k-1) bars inbetween the gaps of n cupcakes (“stars”). The number of “bars” and “stars” are (n+k-1) in total.
      - Now let’s imagine we create (n+k-1) slots, we know that n of them are cupcakes, and (k-1) of them are bars. If the stars are fixed and we put bars inbetweem them, the number of ways we can arrange the bars are C(n+k-1, k-1). Similarly, if the bars are fixed and we put the stars in between them, the number of ways we arrange the stars are C(n+k-1, n).
 Now matter which is solution we take, the number should be the same.
-     - So C(n+k-1, k-1) = C(n+k-1, n) = (n+k-1)!/k!(n-1)!
+   - So C(n+k-1, k-1) = C(n+k-1, n) = (n+k-1)!/k!(n-1)!
     
